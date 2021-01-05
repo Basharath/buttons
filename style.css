@@ -1,0 +1,76 @@
+:root {
+  --primary: #0275d8;
+  --primary-light: rgba(2, 117, 216, 0.6);
+  --secondary: #292b2c;
+  --secondary-light: rgba(41, 43, 44, 0.6);
+  --info: #5bc0de;
+  --info-light: rgba(91, 192, 222, 0.6);
+  --success: #5cb85c;
+  --success-light: rgba(92, 184, 92, 0.6);
+  --warning: #f0ad4e;
+  --warning-light: rgba(240, 173, 78, 0.6);
+  --danger: #d9534f;
+  --danger-light: rgba(217, 83, 79, 0.6);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+}
+
+button,
+.btn {
+  border: none;
+  padding: 10px 15px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0px 5px 1px var(--primary-light), 0.5px 3px 3px rgba(0, 0, 0, 0.8);
+
+  margin: 5px;
+  transition: all 0.1s;
+  position: relative;
+  border-radius: 25px;
+  z-index: 100;
+  outline: none;
+}
+
+button:hover,
+.btn:hover {
+  transform: translateY(5px);
+  box-shadow: 1px 1px 1px;
+}
+
+button:active,
+.btn:active {
+  font-size: 14px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  box-shadow: 0px 5px 1px var(--secondary-light),
+    0.5px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-info {
+  background-color: var(--info);
+  box-shadow: 0px 5px 1px var(--info-light), 0.5px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.btn-warning {
+  background-color: var(--warning);
+  box-shadow: 0px 5px 1px var(--warning-light), 0.5px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.btn-success {
+  background-color: var(--success);
+  box-shadow: 0px 5px 1px var(--success-light), 0.5px 3px 3px rgba(0, 0, 0, 0.8);
+}
+.btn-danger {
+  background-color: var(--danger);
+  box-shadow: 0px 5px 1px var(--danger-light), 0.5px 3px 3px rgba(0, 0, 0, 0.8);
+}
